@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
 @Controller
-@SessionAttributes("studentId")
+//@SessionAttributes("studentId")
 public class TargetController {
 //	private String getLoggedinUsername(ModelMap model) {
 //		Authentication authentication = 

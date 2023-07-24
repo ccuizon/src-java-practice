@@ -7,7 +7,7 @@
 		<fieldset class="mb-3">
 			<!-- mb stands for margin at the bottom of the field -->
 			<form:label path="description">Description</form:label>
-			<form:input type="text" path="description" required="required" />
+			<form:input type="text" path="description" required="required" size="50"/>
 			<form:errors path="description" cssClass="text-warning" />
 		</fieldset>
 
@@ -18,7 +18,7 @@
 		</fieldset>
 		
 		<fieldset class="mb-3">
-			<form:label path="endDate">Start Date</form:label>
+			<form:label path="endDate">End Date</form:label>
 			<form:input type="text" path="endDate" />
 			<form:errors path="endDate" cssClass="text-warning" />
 		</fieldset>
@@ -30,7 +30,7 @@
 			<form:errors path="outcome" cssClass="text-warning" />
 		</fieldset>
 
-		<form:input type="hidden" path="id" />
+		<form:input type="hidden" path="targetId" />
 		<form:input type="hidden" path="active" />
 		<input type="submit" class="btn btn-success" />
 
@@ -40,7 +40,11 @@
 <%@ include file="common/footer.jspf"%>
 
 <script type="text/javascript">
-	$('#targetDate').datepicker({
+	$('#startDate').datepicker({
+		format : 'yyyy-mm-dd'
+	});
+	
+	$('#endDate').datepicker({
 		format : 'yyyy-mm-dd'
 	});
 </script>

@@ -22,9 +22,9 @@
 					<td>${target.endDate}</td>
 					<td>${target.outcome}</td>
 					<td>${target.active}</td>
-					<td><a href="delete-target?id=${target.id}"
+					<td><a href="delete-target?id=${target.targetId}"
 						class="btn btn-warning">Delete</a></td>
-					<td><a href="update-target?id=${target.id}"
+					<td><a href="update-target?id=${target.targetId}"
 						class="btn btn-success">Update</a></td>
 				</tr>
 			</c:forEach>
